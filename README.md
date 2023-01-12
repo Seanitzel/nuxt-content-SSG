@@ -1,6 +1,7 @@
-# Content v2 Minimal Starter
+# Nuxt 3 content module - SSG issue reproduction
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+Minimal project that showcases the issue of rendering md pages from the content directory when building the app as SSG using the generate command.
+When running the app locally everything works as expected, but after generating and either running a local server or deploying it anywhere, it doesn't work - it fails with an error that says it can't find the resource it's trying to fetch.
 
 ## Setup
 
@@ -9,12 +10,6 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,21 +17,13 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
 
 Locally preview production build:
 
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
